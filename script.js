@@ -1,4 +1,3 @@
-// Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -12,7 +11,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Handle contact form submission
 function handleSubmit(event) {
   event.preventDefault();
   
@@ -29,18 +27,15 @@ function handleSubmit(event) {
   }
 }
 
-// Add scroll animation for elements
 window.addEventListener('scroll', function() {
   const scrollTop = window.scrollY;
   
-  // Parallax effect for hero section
   const hero = document.querySelector('.hero');
   if (hero) {
     hero.style.backgroundPositionY = scrollTop * 0.5 + 'px';
   }
 });
 
-// Fade in animation on scroll
 function revealOnScroll() {
   const elements = document.querySelectorAll('.service-card, .portfolio-item');
   
@@ -58,5 +53,4 @@ function revealOnScroll() {
 window.addEventListener('scroll', revealOnScroll);
 revealOnScroll();
 
-// Mobile menu toggle (optional for future enhancement)
 console.log('Joshua S Adante - Web Designer Portfolio Loaded');
